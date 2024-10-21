@@ -1,0 +1,12 @@
+{% extends 'website/base.html' %}
+
+{% block title %}About Us - Microsoft{% endblock %}
+
+{% block content %}
+    <h2>About Microsoft</h2>
+    <ul>
+        {% for key, value in company_info.items %}
+            <li><strong>{{ key }}:</strong> {{ value }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
